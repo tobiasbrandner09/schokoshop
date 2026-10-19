@@ -1,0 +1,173 @@
+/* Farbthema: warme Schokoladentöne + Puderzucker-Weiß + Beerenton-Akzent */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f7ede4;
+    color: #3b2417;
+}
+
+.banner {
+    padding: 45px 20px;
+    text-align: center;
+    background: repeating-linear-gradient(
+        45deg,
+        #4a2c1a,
+        #4a2c1a 20px,
+        #5a3a24 20px,
+        #5a3a24 40px
+    );
+    color: #fff5e6;
+    border-bottom: 8px solid #c0563b;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.slogan {
+    margin: 8px 0 0;
+    font-style: italic;
+    color: #f2c9a0;
+}
+
+.kategorien {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    padding: 7px 18px;
+    background-color: #fff;
+    border: 2px solid #4a2c1a;
+    border-radius: 999px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.chip.aktiv {
+    background-color: #c0563b;
+    border-color: #c0563b;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px 30px;
+}
+
+.karte {
+    background-color: #fff;
+    width: 280px;
+    padding: 24px 20px;
+    border-radius: 24px 24px 8px 8px;
+    box-shadow: 0 8px 20px rgba(74, 44, 26, 0.15);
+    text-align: center;
+    border-top: 10px solid #4a2c1a;
+    transition: transform 0.2s;
+}
+
+.karte:hover {
+    transform: translateY(-6px) rotate(-1deg);
+}
+
+.karte.dunkel { border-top-color: #3b2417; }
+.karte.hell   { border-top-color: #d9a25f; }
+.karte.nuss   { border-top-color: #c0563b; }
+
+.emoji {
+    font-size: 48px;
+    margin-bottom: 6px;
+}
+
+.karte h2 {
+    margin: 6px 0;
+    font-size: 20px;
+}
+
+.karte p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #7a5c48;
+}
+
+.zeile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0 4px;
+}
+
+.preis {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4a2c1a;
+}
+
+.badge {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background-color: #ffd9c9;
+    color: #a03d22;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kaufen {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #fff;
+    background-color: #4a2c1a;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.kaufen:hover {
+    background-color: #c0563b;
+}
+
+.korb {
+    flex-basis: 100%;
+    margin: 10px auto 0;
+    max-width: 700px;
+    padding: 16px 20px;
+    background-color: #fff5e6;
+    border: 3px dotted #c0563b;
+    border-radius: 16px;
+    font-size: 17px;
+    text-align: center;
+}
+
+footer {
+    background-color: #4a2c1a;
+    color: #e9cdb4;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 640px) {
+    .banner h1 { font-size: 30px; }
+    .karte { width: 100%; }
+}

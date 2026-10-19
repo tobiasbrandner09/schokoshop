@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoLaden – Dein Schokoshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="banner">
+        <h1>🍫 ChocoLaden</h1>
+        <p class="slogan">Schmelzende Träume aus eigener Werkstatt</p>
+    </header>
+
+    <nav class="kategorien">
+        <span class="chip aktiv">Alle</span>
+        <span class="chip">Dunkel</span>
+        <span class="chip">Hell</span>
+        <span class="chip">Nüsse</span>
+    </nav>
+
+    <main>
+        <article class="karte dunkel">
+            <div class="emoji">🍫</div>
+            <h2>Dunkle Schokolade 85 %</h2>
+            <p>Intensiv, kräftig, für echte Kenner. Kakao aus Ecuador.</p>
+            <div class="zeile">
+                <span class="preis">4,90 €</span>
+                <span class="badge">Bestseller</span>
+            </div>
+            <button class="kaufen" data-name="Dunkle Schokolade 85 %">Kaufen</button>
+        </article>
+
+        <article class="karte hell">
+            <div class="emoji">🍬</div>
+            <h2>Helle Nougat-Schokolade</h2>
+            <p>Cremig-süß mit feinem Haselnussnougat aus der Steiermark.</p>
+            <div class="zeile">
+                <span class="preis">5,50 €</span>
+                <span class="badge">Neu</span>
+            </div>
+            <button class="kaufen" data-name="Helle Nougat-Schokolade">Kaufen</button>
+        </article>
+
+        <article class="karte nuss">
+            <div class="emoji">🥜</div>
+            <h2>Cashew-Karamell-Riegel</h2>
+            <p>Knusprig geröstete Cashews auf weichem Karamell – Handarbeit.</p>
+            <div class="zeile">
+                <span class="preis">6,20 €</span>
+                <span class="badge">Limitiert</span>
+            </div>
+            <button class="kaufen" data-name="Cashew-Karamell-Riegel">Kaufen</button>
+        </article>
+
+        <div class="korb" id="korb">
+            🛒 <span id="korbText">Noch nichts im Korb – deine Schokolade wartet!</span>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 ChocoLaden · Versandfertig verpackt in Alufolie 🎁
+    </footer>
+
+    <script src="script.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" nonce="zMub4PxIkvSI1AOL44tMgA==" data-cf-beacon='{"version":"2024.11.0","token":"36b4216ae2dc4d5488c249161e71fe1e","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
